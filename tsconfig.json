@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Основные опции */
+    "target": "ES6",                                  // Целевая версия JavaScript (ES6 - поддержка современных возможностей JS)
+    "module": "commonjs",                             // Модульная система (CommonJS для Node.js)
+    "lib": ["ES6"],                                   // Библиотеки (ES6 - включает стандартные объекты и функции JS)
+    "allowJs": true,                                  // Разрешить компиляцию .js файлов
+    "outDir": "./dist",                               // Директория для выходных файлов (JS)
+    "rootDir": "./src",                               // Корневая директория исходных файлов (TS)
+    "strict": true,                                   // Включить все строгие проверки типов
+    "esModuleInterop": true,                          // Включить совместимость с модулями ES6
+    "skipLibCheck": true,                             // Пропустить проверку типов библиотек
+    "forceConsistentCasingInFileNames": true,         // Проверка на консистентность регистров в именах файлов
+
+    /* Опции для проекта */
+    "resolveJsonModule": true,                        // Поддержка импорта .json файлов
+    "isolatedModules": true,                          // Обработка каждого файла как отдельного модуля (для совместимости с Babel)
+
+    /* Маппинг исходных карт */
+    "sourceMap": true,                                // Генерация .map файлов для отладки
+
+    /* Опции для Node.js */
+    "moduleResolution": "node",                       // Модульный резолвер (использует правила Node.js)
+    "types": ["node"],                                // Включить типы для Node.js
+    "typeRoots": ["./node_modules/@types"]            // Пути для поиска типов
+  },
+  "include": ["src/**/*"],                            // Включить все файлы в папке src
+  "exclude": ["node_modules", "dist"]                 // Исключить node_modules и dist из компиляции
+}
